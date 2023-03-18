@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Open+Sans:wght@300;400;500&display=swap');
+
+*,*::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+   
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  /*----------- header ------------ */
+.header-top{
+    width: 100%;
+    background-color: black;
+    height: 45px;
+}
+.headertop-items a,h5{
+color: white;
+}
+.headertop-items{ 
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+}
+.sign-in{
+    padding-right: 20px;
+}
+.headertop-items h5{
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.logoo{
+color: black;
+    font-family: 'Mynerve', cursive;
+    font-size: 26px;
+    font-weight: 500;
+}
+.logoo span{
+    color: red;
+}
+.navs a{
+    color: black;
+    font-size: 18px;
+    transition: 0.4s ease-in-out;
+}
+.navs a:hover{
+    color: red;
+}
+.navs{
+    width: 340px;
+}
+.navs ul{
+    letter-spacing: 2px;
+    justify-content: space-between;
+    display: flex;
+}
+.header-full{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 26px;
+    height: 72px;
+}
+.cart-liked ul{
+    display: flex;
+}
+#cart-icon{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: block !important;
+    position: absolute;
+    left: 51%;
+    top: 11%;
+    z-index: 20;
+    width: 150px;
+    height: 140px;
+    background-color: black;
+}
+.dropdown a{
+    color: white;
+}
+.dropdown ul{
+    padding: 8px 0;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.const{
+    display: none;
+}
+
+/* main */
+main{
+    padding-top: 8px;
+}
+.wholesection{
+    background-color:  rgba(255, 231, 197, 0.258);
+    width: 100%;
+    height: 700px;
+}
+.container-contact{
+    width: 1200px;
+    margin: 0 auto;
+}
+.wrapper{
+    width: 510px;
+    height: 560px;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0px 10px 5px rgba(0, 0,0,0.1);
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px;
+}
+.container-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+}
+.contact-text p{
+    font-weight: 400;
+}
+.contact-text h3{
+    color: red;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+.contact-text h1{
+    letter-spacing: 2px;
+    font-size: 34px;
+    padding: 25px 0;
+}
+main form{
+    font-family: 'Open Sans', sans-serif;
+    width: 400px;
+    margin: 20px 37px;
+    text-align: center;
+}
+form h1{
+    font-size: 22px;
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 60px;
+}
+input,textarea{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 22px;
+    border: none;
+    outline: none;
+    display: block;
+    border-radius: 4px;
+    border: 1px solid red;
+}
+form button{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding:22px;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+button:hover{
+    background-color: red;
+}
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid red;
+    z-index: 20;
+    transition: 1.5s;
+}
+.cart.active{
+    right: 0;
+    transition: .5s;
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 16px;
+    
+}
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.card-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-remove{
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid black;
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: 0.5rem;
+}
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#cart-close{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+/* footer */
+footer{
+    padding-top: 80px;
+}
+.footercover{
+    width: 100%;
+    height: 400px;
+    background-color:#111;
+}
+.footeritems{
+    width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+.quote{
+    padding-top: 14px;
+}
+.footerlogo {
+    font-size: 32px;
+    color: white;
+    font-family: 'Mynerve', cursive;    
+}
+.footerlogo span{
+    color: red;
+}
+.footertop-items p{
+    font-size: 14px;
+    color: #b7b7b7;
+}
+.footertop-items{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 98px;
+    padding-bottom: 80px;
+}
+.ikincibasliq {
+    font-size: 20px !important;
+    letter-spacing: 3px;
+    color: white !important;
+}
+.linklerfooter{
+    padding-top: 10px;
+}
+.linklerfooter a{
+    padding:5px 0;
+    letter-spacing: 1px;
+    font-size: 14px;
+    display: block;
+    color: #b7b7b7;
+}
+.befirst{
+    padding: 12px 0;
+}
+.dorduncu form{
+    padding-top: 12px;
+}
+.dorduncu form input{
+    width: 100%;
+    font-size: 15px;
+    color: #3d3d3d;
+    background: transparent;
+    border: none;
+    padding: 15px 0;
+    border-bottom: 2px solid #ffffff;
+}
+.newsletter:focus{
+    outline: none;
+}
+.footerbottom-items{
+    width: 100%;
+    height: 1px;
+    background-color: #b7b7b797;
+}
+
+.scrollup{
+    position: fixed;
+    background:red;
+    right: 1rem;
+    bottom: -20%;
+    display: inline-flex;
+    padding: 6px 8px;
+    border-radius: .25rem;
+    z-index: 32;
+    opacity: .8;
+    transition: .4s;
+  }
+  .scrollup__icon{
+    font-size: 1rem;
+    color: white;
+  }
+  .scrollup:hover{
+    opacity: 1;
+  }
+  
+  /* Show Scroll Up*/
+  .show-scroll{
+    bottom: 3rem;
+  }

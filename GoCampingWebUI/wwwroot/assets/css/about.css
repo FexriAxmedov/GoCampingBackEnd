@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Open+Sans:wght@300;400;500&display=swap');
+
+*,*::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+   
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  /*----------- header ------------ */
+.header-top{
+    width: 100%;
+    background-color: black;
+    height: 45px;
+}
+.headertop-items a,h5{
+color: white;
+}
+.headertop-items{ 
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+}
+.sign-in{
+    padding-right: 20px;
+}
+.headertop-items h5{
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.logoo{
+color: black;
+    font-family: 'Mynerve', cursive;
+    font-size: 26px;
+    font-weight: 500;
+}
+.logoo span{
+    color: red;
+}
+.navs a{
+    color: black;
+    font-size: 18px;
+    transition: 0.4s ease-in-out;
+}
+.navs a:hover{
+    color: red;
+}
+.navs{
+    width: 340px;
+}
+.navs ul{
+    letter-spacing: 2px;
+    justify-content: space-between;
+    display: flex;
+}
+.header-full{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 26px;
+    height: 72px;
+}
+.cart-liked ul{
+    display: flex;
+}
+#cart-icon{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: block !important;
+    position: absolute;
+    left: 51%;
+    top: 11%;
+    z-index: 20;
+    width: 150px;
+    height: 140px;
+    background-color: black;
+}
+.dropdown a{
+    color: white;
+}
+.dropdown ul{
+    padding: 8px 0;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.const{
+    display: none;
+}
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid red;
+    z-index: 20;
+    transition: 1.5s;
+}
+.cart.active{
+    right: 0;
+    transition: .5s;
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 16px;
+    
+}
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.card-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-remove{
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid black;
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: 0.5rem;
+}
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#cart-close{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+}
+
+.container-about-us{
+    width: 1200px;
+    margin: 0 auto;
+}
+main{
+    padding-top: 40px;
+}
+.basliqimiz{
+    font-size: 28px;
+    font-weight: 500;
+    padding-bottom: 22px;
+}
+main img{
+    width: 1200px;
+    height: 690px;
+}
+
+.hamisi{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+}
+.hamisi p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.hamisi h3{
+    font-size: 22px;
+    font-weight:500;
+    padding-bottom: 12px;
+}
+ /* -------footer ---------- */
+ footer{
+    padding-top: 120px;
+}
+.footercover{
+    width: 100%;
+    height: 400px;
+    background-color:#111;
+}
+.footeritems{
+    width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+.quote{
+    padding-top: 14px;
+}
+.footerlogo {
+    font-size: 32px;
+    color: white;
+    font-family: 'Mynerve', cursive;    
+}
+.footerlogo span{
+    color: red;
+}
+.footertop-items p{
+    font-size: 14px;
+    color: #b7b7b7;
+}
+.footertop-items{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 98px;
+    padding-bottom: 80px;
+}
+.ikincibasliq {
+    font-size: 20px !important;
+    letter-spacing: 3px;
+    color: white !important;
+}
+.linklerfooter{
+    padding-top: 10px;
+}
+.linklerfooter a{
+    padding:5px 0;
+    letter-spacing: 1px;
+    font-size: 14px;
+    display: block;
+    color: #b7b7b7;
+}
+.befirst{
+    padding: 12px 0;
+}
+.dorduncu form{
+    padding-top: 12px;
+}
+.dorduncu form input{
+    width: 100%;
+    font-size: 15px;
+    color: #3d3d3d;
+    background: transparent;
+    border: none;
+    padding: 15px 0;
+    border-bottom: 2px solid #ffffff;
+}
+.newsletter:focus{
+    outline: none;
+}
+.footerbottom-items{
+    width: 100%;
+    height: 1px;
+    background-color: #b7b7b797;
+}
+
+.scrollup{
+    position: fixed;
+    background:red;
+    right: 1rem;
+    bottom: -20%;
+    display: inline-flex;
+    padding: 6px 8px;
+    border-radius: .25rem;
+    z-index: 32;
+    opacity: .8;
+    transition: .4s;
+  }
+  .scrollup__icon{
+    font-size: 1rem;
+    color: white;
+  }
+  .scrollup:hover{
+    opacity: 1;
+  }
+  
+  /* Show Scroll Up*/
+  .show-scroll{
+    bottom: 3rem;
+  }
