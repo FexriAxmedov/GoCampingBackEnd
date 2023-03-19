@@ -1,0 +1,121 @@
+﻿
+@{
+   ViewBag.Title = "Product/Index";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+  
+    <main class="product-showcase">
+        <div class="product-showcase-container">
+            <div class="showcase-content">
+                <div class="goback"><a href="#"><i class='bx bx-chevron-left'></i><span>Go Back</span>/ Shop</a></div>
+                <div class="actualproduct">
+                    <div class="imagecarousel">
+                        <div class="product-small-img">
+                            <img src="./assets/images/fortheproduct2.jpg" onclick="myFunction(this)">
+                            <img src="./assets/images/fortheproduct1.jpg" onclick="myFunction(this)">
+                            <img src="./assets/images/fortheproduct4.jpg" onclick="myFunction(this)">
+                        </div>
+                        <div class="img-container">
+                            <img id="imageBox" src="./assets/images/fortheproduct2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="imagedetails">
+                        <h1>Venture 5-Sided QuickSet Screen Shelter</h1>
+                        <h3>$269.99</h3>
+                        <p class="productfeatures">Features:</p>
+                        <p class="featureinfo">
+                            Pop-up screen shelter offers the best of both worlds!
+
+                            Small enough to be easily packed and transported, and yet big enough to offer enough room for a table and a few people inside. Features 45-second-setup, so-see-um mesh to keep the smallest biting insects out, and protection from the sun and rain. Perfect for the family on the go! Great for decks, camping,
+                        </p>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+
+    <section class="shop-product">
+        <h2 class="featuredh1">More Products</h2>
+        <div class="whole-box">
+            <div class="box1">
+                <div class="product-box">
+                    <a href="#"><div class="product-image"> <img src="./assets/images/738942_Q_1_low.png" alt="" class="product-img"></div></a>
+                    <h2 class="product-title">Comfort-Plush Airbed</h2>
+                    <div class="asdfg">
+                        <span class="product-price">$52</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <a href="#"> <div class="product-image"><img src="./assets/images/3.png" alt="" class="product-img"></div></a>
+                    <h2 class="product-title">Outdoor Fire Pit</h2>
+                    <div class="asdfg">
+                        <span class="product-price">$150</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <a href="#">  <div class="product-image"><img src="./assets/images/2.png" alt="" class="product-img"></div></a>
+                    <h2 class="product-title"> Ultimate Lift-Off Griddle</h2>
+                    <div class="asdfg">
+                        <span class="product-price">$419</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="product-box">
+                    <a href="#"> <div class="product-image"><img src="./assets/images/4.png" alt="" class="product-img"></div></a>
+                    <h2 class="product-title"> Outdoor Utility</h2>
+                    <div class="asdfg">
+                        <span class="product-price">$125</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <a href="#">  <div class="product-image"><img src="./assets/images/5.png" alt="" class="product-img"></div></a>
+                    <h2 class="product-title">Rolling Storage Cart with Handle</h2>
+                    <div class="asdfg">
+                        <span class="product-price">$37</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <a href="#">  <div class="product-image"><img src="./assets/images/6.png" alt="" class="product-img"></div></a>
+                    <h2 class="product-title">LED Rechargeable Spotlight</h2>
+                    <div class="asdfg">
+                        <span class="product-price">$65</span>
+                        <i class='bx bx-shopping-bag add-cart'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fa-solid fa-arrow-up scrollup__icon"></i>
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./assets/js/product.js"></script>
+</body>
+</html>
+

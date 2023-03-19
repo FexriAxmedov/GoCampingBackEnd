@@ -1,0 +1,233 @@
+﻿
+@{
+    ViewBag.Title = "Shop/Index";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/shop.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+   
+    <main class="shopitself">
+        <div class="shop-container">
+            <div class="inputucun">
+                <div class="input-box">
+                    <div class="input-elements">
+                        <input class="inputsearch" type="search" placeholder="Search...">
+                        <a href="#" class="lupa"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-items">
+                <div class="left-sidebar">
+                    <div class="topofthat">
+                        <i class='bx bx-filter'></i>
+                        <h1>Filters</h1>
+                    </div>
+                    <div class="firstdropdown">
+                        <div class="select-btn">
+                            <span class="btn-text">Select Price</span>
+                            <span class="arrow-dwn">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </div>
+
+                        <ul class="list-items">
+                            <li class="item">
+                                <span class="checkbox">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                </span>
+                                <span class="item-text">0$-50$</span>
+                            </li>
+                            <li class="item">
+                                <span class="checkbox">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                </span>
+                                <span class="item-text">50$-100$</span>
+                            </li>
+                            <li class="item">
+                                <span class="checkbox">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                </span>
+                                <span class="item-text">100$-200$</span>
+                            </li>
+                            <li class="item">
+                                <span class="checkbox">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                </span>
+                                <span class="item-text">200$-300$</span>
+                            </li>
+                            <li class="item">
+                                <span class="checkbox">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                </span>
+                                <span class="item-text">300$-500$</span>
+                            </li>
+                            <li class="item">
+                                <span class="checkbox">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                </span>
+                                <span class="item-text">500$-2000$</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="colortitle"><h2>Color:</h2></div>
+                    <div class="colorchanger">
+                        <div class="colorcontent">
+                            <div class="allitems">
+                                <label>
+                                    <input type="checkbox" name="option1" value="option1">
+                                    Red
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="option2" value="option2">
+                                    Blue
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="option3" value="option3">
+                                    Yellow
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="option4" value="option3">
+                                    Green
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="option5" value="option4">
+                                    Black
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="option6" value="option5">
+                                    Grey
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="option7" value="option5">
+                                    Brown
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="option8" value="option5">
+                                    Orange
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forcategory">
+                        <h2>Categories:</h2>
+                    </div>
+                    <div class="categorynames">
+                        <div class="categorynames-content">
+                            <div class="allitems2">
+                                <ul>
+                                    <li><a href="#">Camping Tents <span>(00)</span></a></li>
+                                    <li><a href="#">Sleeping Bags<span>(00)</span></a></li>
+                                    <li><a href="#"> Camp Tools<span>(00)</span></a></li>
+                                    <li><a href="#">Emergency Preparedness<span>(00)</span></a></li>
+                                    <li><a href="#">Outdoor Electrical<span>(00)</span></a></li>
+                                    <li><a href="#">Flashlights & Lanterns<span>(00)</span></a></li>
+                                    <li><a href="#">Wagons & Carts</a><span>(00)</span> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="apply-btn">Apply</button>
+                </div>
+                <div class="right-products">
+                    <div class="allproducts">
+                        <div class="product-box">
+                            <a href="./product.html"><div class="product-image"> <img src="./assets/images/tent.png" alt="" class="product-img"></div></a>
+                            <h2 class="product-title">QuickSet Screen Shelter</h2>
+                            <div class="asdfg">
+                                <span class="product-price">$270</span>
+                                <i class='bx bx-shopping-bag add-cart'></i>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#"> <div class="product-image"><img src="./assets/images/3.png" alt="" class="product-img"></div></a>
+                            <h2 class="product-title">Outdoor Fire Pit</h2>
+                            <div class="asdfg">
+                                <span class="product-price">$150</span>
+                                <i class='bx bx-shopping-bag add-cart'></i>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#">  <div class="product-image"><img src="./assets/images/2.png" alt="" class="product-img"></div></a>
+                            <h2 class="product-title"> Ultimate Lift-Off Griddle</h2>
+                            <div class="asdfg">
+                                <span class="product-price">$419</span>
+                                <i class='bx bx-shopping-bag add-cart'></i>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#"> <div class="product-image"><img src="./assets/images/4.png" alt="" class="product-img"></div></a>
+                            <h2 class="product-title"> Outdoor Utility</h2>
+                            <div class="asdfg">
+                                <span class="product-price">$125</span>
+                                <i class='bx bx-shopping-bag add-cart'></i>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#">  <div class="product-image"><img src="./assets/images/5.png" alt="" class="product-img"></div></a>
+                            <h2 class="product-title">Rolling Storage Cart with Handle</h2>
+                            <div class="asdfg">
+                                <span class="product-price">$37</span>
+                                <i class='bx bx-shopping-bag add-cart'></i>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#">  <div class="product-image"><img src="./assets/images/6.png" alt="" class="product-img"></div></a>
+                            <h2 class="product-title">LED Rechargeable Spotlight</h2>
+                            <div class="asdfg">
+                                <span class="product-price">$65</span>
+                                <i class='bx bx-shopping-bag add-cart'></i>
+                            </div>
+                        </div>
+
+                        <div class="product-box">
+                            <a href="#"> <div class="product-image"><img src="./assets/images/3.png" alt="" class="product-img"></div></a>
+                            <h2 class="product-title">Outdoor Fire Pit</h2>
+                            <div class="asdfg">
+                                <span class="product-price">$150</span>
+                                <i class='bx bx-shopping-bag add-cart'></i>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#">  <div class="product-image"><img src="./assets/images/2.png" alt="" class="product-img"></div></a>
+                            <h2 class="product-title"> Ultimate Lift-Off Griddle</h2>
+                            <div class="asdfg">
+                                <span class="product-price">$419</span>
+                                <i class='bx bx-shopping-bag add-cart'></i>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <a href="#"><div class="product-image"> <img src="./assets/images/738942_Q_1_low.png" alt="" class="product-img"></div></a>
+                            <h2 class="product-title">Comfort-Plush Airbed</h2>
+                            <div class="asdfg">
+                                <span class="product-price">$52</span>
+                                <i class='bx bx-shopping-bag add-cart'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+   
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fa-solid fa-arrow-up scrollup__icon"></i>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/shop.js"></script>
+</body>
+</html>
+
