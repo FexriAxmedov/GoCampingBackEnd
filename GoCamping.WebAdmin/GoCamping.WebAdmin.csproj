@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GoCamping.DAL\GoCamping.DAL.csproj" />
+    <ProjectReference Include="..\GoCamping.BLL\GoCamping.BLL.csproj" />
   </ItemGroup>
 
 </Project>

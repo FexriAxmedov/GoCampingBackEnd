@@ -15,7 +15,10 @@ namespace GoCamping.BLL.Mapping
         {
             CreateMap<Contact, ContactDto>().ReverseMap();
             CreateMap<Product, ProductDto>().ReverseMap();
-       
+            CreateMap<PriceFilterModel, PriceFilterModelDto>().ReverseMap();
+            CreateMap<PriceRange, PriceRangeDto>().ReverseMap();
+            CreateMap<SearchModel, SearchModelDto>().ReverseMap();
+
         }
     }
 }

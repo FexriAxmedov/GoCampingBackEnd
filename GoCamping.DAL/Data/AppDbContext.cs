@@ -18,6 +18,10 @@ namespace GoCamping.DAL.Data
        
         public DbSet<Product> Products { get; set; }
         public DbSet<Contact> Contacts { get; set; }
+        public DbSet<PriceFilterModel> PriceFilters { get; set; }
+        public DbSet<PriceRange> PriceRanges { get; set; }
+        public DbSet<SearchModel> SearchModels { get; set; }
+
 
     }
 }

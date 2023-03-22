@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoCamping.WebUI", "GoCampin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoCamping.DAL", "GoCamping.DAL\GoCamping.DAL.csproj", "{A8B6D997-D9E3-40CF-A05F-48BBCF4A172D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoCamping.BLL", "GoCamping.BLL\GoCamping.BLL.csproj", "{48D7D563-679D-47E1-A01D-A5CD371140D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoCamping.BLL", "GoCamping.BLL\GoCamping.BLL.csproj", "{48D7D563-679D-47E1-A01D-A5CD371140D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoCamping.WebAdmin", "GoCamping.WebAdmin\GoCamping.WebAdmin.csproj", "{D765C309-5D29-462B-86BD-3BF98FD64EAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoCamping.WebAdmin", "GoCamping.WebAdmin\GoCamping.WebAdmin.csproj", "{D765C309-5D29-462B-86BD-3BF98FD64EAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
