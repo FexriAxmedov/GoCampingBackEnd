@@ -16,7 +16,7 @@ namespace GoCamping.DAL.DBModel
         [Required]
         public string Description { get; set; }
         [Required]
-        public byte[] Img { get; set; }
+        public string Img { get; set; }
 
     }
 }

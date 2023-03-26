@@ -1,4 +1,3 @@
-using FluentValidation.AspNetCore;
 using AutoMapper;
 using GoCamping.BLL.Mapping;
 using GoCamping.BLL.Services;
@@ -20,7 +19,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using GoCamping.DAL.Repository;
 using GoCamping.BLL.Exceptions;
-using GoCamping.BLL.Validations;
 using Microsoft.AspNetCore.Http;
 using GoCamping.BLL.Helper;
 using Microsoft.AspNetCore.Identity;
@@ -41,10 +39,12 @@ namespace GoCamping.WebAdmin
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-
+            //SqlServer
             services.AddDbContext<AppDbContext>(options =>
-       options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
-
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString"));
+                options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+            });
             // Add AutoMapper
             services.AddAutoMapper(typeof(CustomMapping));
 
@@ -59,12 +59,7 @@ namespace GoCamping.WebAdmin
             services.AddSingleton<CustomException>();
 
 
-            //validation
-            services.AddControllersWithViews();
-            services.AddFluentValidation(fv => {
-                    fv.RegisterValidatorsFromAssemblyContaining<ContactValidation>();
-                    fv.RegisterValidatorsFromAssemblyContaining<ProductValidation>();
-                });
+           
 
 
 

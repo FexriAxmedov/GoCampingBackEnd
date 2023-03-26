@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Admin/Update";
+}
+
+@model GoCamping.DAL.Dtos.ProductDto
+
+<div class="card">
+    <h5 class="card-header">Update Product</h5>
+    <div class="card-body">
+        <form method="post" asp-action="Update" enctype="multipart/form-data">
+             <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="mb-3">
+                <label asp-for="Name" for="name" class="form-label">Name</label>
+                <input asp-for="Name" type="text" class="form-control" id="name" name="Name" required>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description" for="description" class="form-label">Description</label>
+                <textarea asp-for="Description" class="form-control" id="description" name="Description" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Price" for="price" class="form-label">Price</label>
+                <input asp-for="Price" type="number" class="form-control" id="price" name="Price" required>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Img" for="image" class="form-label">Image</label>
+                <input asp-for="Img" type="file" class="form-control" id="image" name="imageFile" required>
+            </div>
+            <button type="submit" value="Create" class="btn btn-primary">Update</button>
+        </form>
+    </div>
+</div>
