@@ -1,0 +1,28 @@
+﻿@using GoCamping.WebAdmin.ViewModels;
+@model UserViewModel
+
+@{
+    ViewBag.Title = "Admin/CreateUser";
+}
+
+<div class="card">
+    <h5 class="card-header">Create Product</h5>
+    <div class="card-body">
+        <form method="post" asp-action="UserCreate" enctype="multipart/form-data">
+             <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="mb-3">
+                <label asp-for="UserName" for="username" class="form-label">Username</label>
+                <input asp-for="UserName" type="text" class="form-control" id="name"  required>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Email" for="email" class="form-label">Email</label>
+                <input asp-for="Email" type="email" class="form-control" id="name"  required>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Password" for="password" class="form-label">Password</label>
+                <input asp-for="Password" type="password" class="form-control" id="password"  required>
+            </div>
+            <button type="submit" value="Create" class="btn btn-primary">Create</button>
+        </form>
+    </div>
+</div>

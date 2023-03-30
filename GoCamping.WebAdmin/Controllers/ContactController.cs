@@ -24,16 +24,12 @@ namespace GoCamping.WebAdmin.Controllers
 
         public async Task<IActionResult> Delete(int id)
         {
-            var category = await _service.GetByIdAsync(id);
-
-            return View(category);
-
-        }
-        [HttpPost]
-        public IActionResult Delete(ContactDto itemDto)
-        {
-            _service.Delete(itemDto.Id);
-            TempData["success"] = "Kateqoriya uğurla silindi.";
+            var product = await _service.GetByIdAsync(id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            _service.Delete(id);
             return RedirectToAction("Index");
         }
 

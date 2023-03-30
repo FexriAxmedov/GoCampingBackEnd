@@ -20,7 +20,7 @@ namespace GoCamping.WebAdmin.Controllers
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly string _imgPath = @"img/";
 
-        public ProductController(IGenericService<ProductDto, Product> productService, IMapper mapper, IWebHostEnvironment webHostEnvironment)
+        public ProductController(IGenericService<ProductDto, Product> productService, IWebHostEnvironment webHostEnvironment)
         {
             _productService = productService;
             _webHostEnvironment = webHostEnvironment;

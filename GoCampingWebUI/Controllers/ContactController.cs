@@ -8,10 +8,7 @@ namespace GoCamping.WebUI.Controllers
 {
     public class ContactController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+      
         private readonly IGenericService<ContactDto, Contact> _service;
         public ContactController(IGenericService<ContactDto, Contact> service)
         {

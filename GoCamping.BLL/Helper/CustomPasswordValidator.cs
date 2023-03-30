@@ -13,14 +13,7 @@ namespace GoCamping.BLL.Helper
 
             List<IdentityError> errors = new List<IdentityError>();
 
-            if (password.ToLower().Contains(user.UserName.ToLower()))
-            {
-                errors.Add(new IdentityError()
-                {
-                    Code = "PasswordContainsUserName",
-                    Description = "Username should not be written instead of password"
-                });
-            }
+         
             if (password.ToLower().Contains("1234"))
             {
                 errors.Add(new IdentityError()

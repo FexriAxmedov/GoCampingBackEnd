@@ -1,0 +1,43 @@
+﻿@using GoCamping.WebAdmin.ViewModels;
+@model List<RoleViewModel>
+
+@{
+    ViewBag.Title = "Admin/Roles";
+}
+
+
+
+<div class="card">
+    <h5 class="card-header">Roles</h5>
+    <div class="table-responsive text-nowrap">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Role</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="table-border-bottom-0">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td><strong>@item.Name</strong></td>
+                       <td>
+                            <div class="dropdown">
+                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                </button>
+                                <div style="z-index: 10;" class="dropdown-menu">
+                                    <a asp-route-id="@item.Id" asp-action="RoleUpdate" class="dropdown-item"><i class="bx bx-edit-alt me-1"></i> Edit</a>
+                                    <a asp-route-id="@item.Id" asp-action="RoleDelete" class="dropdown-item"><i class="bx bx-trash me-1"></i> Delete</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<a asp-action="RoleCreate" style="margin-top:18px" class="btn btn-primary">Create</a>

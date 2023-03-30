@@ -1,0 +1,27 @@
+﻿@using GoCamping.WebAdmin.ViewModels;
+@model UserRoleViewModel
+
+
+@{
+    ViewBag.Title = "Admin/RoleAssign";
+}
+
+<div class="card">
+    <h5 class="card-header">Create Product</h5>
+    <div class="card-body">
+        <form method="post" asp-action="RoleAssign" enctype="multipart/form-data">
+             <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="mb-3">
+                <input asp-for="UserId"  type="hidden" class="form-control" />
+                <label asp-for="RoleName" for="name" class="form-label">Add Role</label>
+                <select asp-for="RoleName"
+                        class="form-control"
+                        asp-items="@(new SelectList(Model.Roles, nameof(RoleViewModel.Name), nameof(RoleViewModel.Name)))">
+                </select>
+            </div>
+        
+          
+            <button type="submit" value="Create" class="btn btn-primary">Create</button>
+        </form>
+    </div>
+</div>
