@@ -1,12 +1,19 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using GoCamping.DAL.Data;
+using Microsoft.AspNetCore.Mvc;
 
 namespace GoCamping.WebUI.Controllers
 {
     public class ProductController : Controller
     {
-        public IActionResult Index()
+        readonly AppDbContext db;
+        public ProductController(AppDbContext db)
         {
-            return View();
+            this.db = db;
+        }
+        public IActionResult Index(int id)
+        {
+            var product = db.Products.Find(id);
+            return View(product);
         }
     }
 }

@@ -2,27 +2,19 @@
 @{
     ViewBag.Title = "Shop/Index";
 }
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/shop.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
-</head>
-<body>
+@section addcss{
+    <link href="~/assets/css/shop.css" rel="stylesheet" />
+}
    
     <main class="shopitself">
         <div class="shop-container">
             <div class="inputucun">
                 <div class="input-box">
                     <div class="input-elements">
-                        <input class="inputsearch" type="search" placeholder="Search...">
-                        <a href="#" class="lupa"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <form asp-action="index" method="get">
+                        <input class="inputsearch" name="name" type="search" placeholder="Search...">
+                        <button style="border: none; background: transparent;" type="submit" class="lupa"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
                     </div>
                 </div>
             </div>
@@ -32,134 +24,19 @@
                         <i class='bx bx-filter'></i>
                         <h1>Filters</h1>
                     </div>
+                    <form asp-action="index" method="get">
                     <div class="firstdropdown">
-                        <div class="select-btn">
-                            <span class="btn-text">Select Price</span>
-                            <span class="arrow-dwn">
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </span>
-                        </div>
-
-                        <ul class="list-items">
-                            <li class="item">
-                                <span class="checkbox">
-                                    <i class="fa-solid fa-check check-icon"></i>
-                                </span>
-                                <span class="item-text">0$-50$</span>
-                            </li>
-                            <li class="item">
-                                <span class="checkbox">
-                                    <i class="fa-solid fa-check check-icon"></i>
-                                </span>
-                                <span class="item-text">50$-100$</span>
-                            </li>
-                            <li class="item">
-                                <span class="checkbox">
-                                    <i class="fa-solid fa-check check-icon"></i>
-                                </span>
-                                <span class="item-text">100$-200$</span>
-                            </li>
-                            <li class="item">
-                                <span class="checkbox">
-                                    <i class="fa-solid fa-check check-icon"></i>
-                                </span>
-                                <span class="item-text">200$-300$</span>
-                            </li>
-                            <li class="item">
-                                <span class="checkbox">
-                                    <i class="fa-solid fa-check check-icon"></i>
-                                </span>
-                                <span class="item-text">300$-500$</span>
-                            </li>
-                            <li class="item">
-                                <span class="checkbox">
-                                    <i class="fa-solid fa-check check-icon"></i>
-                                </span>
-                                <span class="item-text">500$-2000$</span>
-                            </li>
-                        </ul>
+                        <span id="amount" style="display: block; margin:2% 0%;">Price: 1</span>
+                        <input type="range" min="1" max="1600" value="0" name="price" id="price"/>
                     </div>
                   
-                   
-                 
 
                     <button type="submit" style="margin-top:20px;" class="apply-btn">Apply</button>
+                    </form>
                 </div>
                 <div class="right-products">
                     <div class="allproducts">
-                        <div class="product-box">
-                            <a href="./product.html"><div class="product-image"> <img src="./assets/images/tent.png" alt="" class="product-img"></div></a>
-                            <h2 class="product-title">QuickSet Screen Shelter</h2>
-                            <div class="asdfg">
-                                <span class="product-price">$270</span>
-                                <i class='bx bx-shopping-bag add-cart'></i>
-                            </div>
-                        </div>
-                        <div class="product-box">
-                            <a href="#"> <div class="product-image"><img src="./assets/images/3.png" alt="" class="product-img"></div></a>
-                            <h2 class="product-title">Outdoor Fire Pit</h2>
-                            <div class="asdfg">
-                                <span class="product-price">$150</span>
-                                <i class='bx bx-shopping-bag add-cart'></i>
-                            </div>
-                        </div>
-                        <div class="product-box">
-                            <a href="#">  <div class="product-image"><img src="./assets/images/2.png" alt="" class="product-img"></div></a>
-                            <h2 class="product-title"> Ultimate Lift-Off Griddle</h2>
-                            <div class="asdfg">
-                                <span class="product-price">$419</span>
-                                <i class='bx bx-shopping-bag add-cart'></i>
-                            </div>
-                        </div>
-                        <div class="product-box">
-                            <a href="#"> <div class="product-image"><img src="./assets/images/4.png" alt="" class="product-img"></div></a>
-                            <h2 class="product-title"> Outdoor Utility</h2>
-                            <div class="asdfg">
-                                <span class="product-price">$125</span>
-                                <i class='bx bx-shopping-bag add-cart'></i>
-                            </div>
-                        </div>
-                        <div class="product-box">
-                            <a href="#">  <div class="product-image"><img src="./assets/images/5.png" alt="" class="product-img"></div></a>
-                            <h2 class="product-title">Rolling Storage Cart with Handle</h2>
-                            <div class="asdfg">
-                                <span class="product-price">$37</span>
-                                <i class='bx bx-shopping-bag add-cart'></i>
-                            </div>
-                        </div>
-                        <div class="product-box">
-                            <a href="#">  <div class="product-image"><img src="./assets/images/6.png" alt="" class="product-img"></div></a>
-                            <h2 class="product-title">LED Rechargeable Spotlight</h2>
-                            <div class="asdfg">
-                                <span class="product-price">$65</span>
-                                <i class='bx bx-shopping-bag add-cart'></i>
-                            </div>
-                        </div>
-
-                        <div class="product-box">
-                            <a href="#"> <div class="product-image"><img src="./assets/images/3.png" alt="" class="product-img"></div></a>
-                            <h2 class="product-title">Outdoor Fire Pit</h2>
-                            <div class="asdfg">
-                                <span class="product-price">$150</span>
-                                <i class='bx bx-shopping-bag add-cart'></i>
-                            </div>
-                        </div>
-                        <div class="product-box">
-                            <a href="#">  <div class="product-image"><img src="./assets/images/2.png" alt="" class="product-img"></div></a>
-                            <h2 class="product-title"> Ultimate Lift-Off Griddle</h2>
-                            <div class="asdfg">
-                                <span class="product-price">$419</span>
-                                <i class='bx bx-shopping-bag add-cart'></i>
-                            </div>
-                        </div>
-                        <div class="product-box">
-                            <a href="#"><div class="product-image"> <img src="./assets/images/738942_Q_1_low.png" alt="" class="product-img"></div></a>
-                            <h2 class="product-title">Comfort-Plush Airbed</h2>
-                            <div class="asdfg">
-                                <span class="product-price">$52</span>
-                                <i class='bx bx-shopping-bag add-cart'></i>
-                            </div>
-                        </div>
+                        @await Component.InvokeAsync("Product", new{max =  ViewBag.Price, name = ViewBag.Name})
                     </div>
                 </div>
             </div>
@@ -172,7 +49,5 @@
     </a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./assets/js/shop.js"></script>
-</body>
-</html>
+
 

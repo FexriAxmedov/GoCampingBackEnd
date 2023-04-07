@@ -3,7 +3,9 @@
 }
 
 
-
+@section addcss{
+    <link rel="stylesheet" href="~/assets/css/style.css">
+}
 
 
 <section class="carousel">
@@ -81,57 +83,9 @@
     <h2 class="featuredh1">Featured Products</h2>
     <div class="whole-box">
         <div class="box1">
-            <div class="product-box">
-                <a asp-area="" asp-controller="Product" asp-action="Index"><div class="product-image"> <img src="./assets/images/tent.png" alt="" class="product-img"></div></a>
-                <h2 class="product-title">QuickSet Screen Shelter</h2>
-                <div class="asdfg">
-                    <span class="product-price">$270</span>
-                    <i class='bx bx-shopping-bag add-cart'></i>
-                </div>
-            </div>
-            <div class="product-box">
-                <a href="#"> <div class="product-image"><img src="./assets/images/3.png" alt="" class="product-img"></div></a>
-                <h2 class="product-title">Outdoor Fire Pit</h2>
-                <div class="asdfg">
-                    <span class="product-price">$150</span>
-                    <i class='bx bx-shopping-bag add-cart'></i>
-                </div>
-            </div>
-            <div class="product-box">
-                <a href="#">  <div class="product-image"><img src="./assets/images/2.png" alt="" class="product-img"></div></a>
-                <h2 class="product-title"> Ultimate Lift-Off Griddle</h2>
-                <div class="asdfg">
-                    <span class="product-price">$419</span>
-                    <i class='bx bx-shopping-bag add-cart'></i>
-                </div>
-            </div>
+    @await Component.InvokeAsync("Product", new{count = 6})
         </div>
-        <div class="box2">
-            <div class="product-box">
-                <a href="#"> <div class="product-image"><img src="./assets/images/4.png" alt="" class="product-img"></div></a>
-                <h2 class="product-title"> Outdoor Utility</h2>
-                <div class="asdfg">
-                    <span class="product-price">$125</span>
-                    <i class='bx bx-shopping-bag add-cart'></i>
-                </div>
-            </div>
-            <div class="product-box">
-                <a href="#">  <div class="product-image"><img src="./assets/images/5.png" alt="" class="product-img"></div></a>
-                <h2 class="product-title">Rolling Storage Cart with Handle</h2>
-                <div class="asdfg">
-                    <span class="product-price">$37</span>
-                    <i class='bx bx-shopping-bag add-cart'></i>
-                </div>
-            </div>
-            <div class="product-box">
-                <a href="#">  <div class="product-image"><img src="./assets/images/6.png" alt="" class="product-img"></div></a>
-                <h2 class="product-title">LED Rechargeable Spotlight</h2>
-                <div class="asdfg">
-                    <span class="product-price">$65</span>
-                    <i class='bx bx-shopping-bag add-cart'></i>
-                </div>
-            </div>
-        </div>
+ 
     </div>
 </section>
 

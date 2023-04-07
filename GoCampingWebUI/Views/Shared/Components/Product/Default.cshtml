@@ -1,0 +1,26 @@
+﻿@model IEnumerable<GoCamping.DAL.DBModel.Product>
+
+@if (string.IsNullOrWhiteSpace(ViewBag.Products))
+{
+    @foreach (var item in Model)
+    {
+            <div class="product-box" style="margin: 2%;">
+                <a asp-controller="product" asp-action="index" asp-route-id="@item.Id"><div class="product-image"> <img src="~/assets/images/tent.png" alt="" class="product-img"></div></a>
+                <h2 class="product-title">@item.Name</h2>
+                <div class="asdfg">
+                    <span class="product-price">$@item.Price</span>
+                    <i class='bx bx-shopping-bag add-cart'></i>
+                </div>
+            </div>
+    }
+}
+else
+{
+  
+         <h3 style="text-align: center;">
+            @ViewBag.Products
+         </h3>
+      
+
+}
+

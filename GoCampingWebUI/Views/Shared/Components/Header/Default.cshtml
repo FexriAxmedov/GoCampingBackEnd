@@ -1,0 +1,63 @@
+﻿<header>
+    <div class="header-top">
+        <div class="headertop-items">
+            <h5>Free shipping, 30-day return or refund guarantee.</h5>
+            <div class="right">
+                <a asp-area="" asp-controller="Registration" asp-action="Index" class="sign-in">SIGN IN / SIGN UP</a>
+                <a href="#">FAQS</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header-full">
+            <div class="logo">
+                <a class="logoo" asp-area="" asp-controller="Home" asp-action="Index">Go<span>Camping.</span></a>
+            </div>
+
+            <div class="navs">
+                <ul>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Shop" asp-action="Index">Shop</a></li>
+                    <li class="pages"><a href="#">Pages</a></li>
+                    <li><a asp-area="" asp-controller="Contact" asp-action="Create">Contact</a></li>
+
+                </ul>
+            </div>
+
+            <div class="dropdown const ">
+                <ul>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Aboutus">About Us</a></li>
+                    <li><a href="#">Shop Details</a></li>
+                    <li><a href="#">Shopping Cart</a></li>
+                    <li><a href="#">Check Out</a></li>
+                    <li><a href="#">Blog details</a></li>
+                </ul>
+            </div>
+
+
+            <div class="cart-liked">
+                <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            </div>
+        </div>
+    </div>
+</header>
+
+                     <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-box">
+            <img src="~/assets/images/tent.png" alt="" class="cart-img">
+            <div class="detail-box">
+                <div class="cart-product-title">TENT</div>
+                <div class="cart-price">$25.04</div>
+            </div>
+            <i class='bx bx-trash cart-remove'></i>
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$25.04</div>
+        </div>
+        <button type="button" class="btn-buy">Buy Now</button>
+        <i class='bx bx-x' id="cart-close"></i>
+
+    </div>
