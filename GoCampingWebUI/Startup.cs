@@ -22,6 +22,8 @@ using GoCamping.BLL.Exceptions;
 using Microsoft.AspNetCore.Http;
 using GoCamping.BLL.Helper;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
 
 namespace GoCampingWebUI
 {
@@ -121,6 +123,14 @@ namespace GoCampingWebUI
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+            });
+            app.UseStaticFiles();
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                Path.Combine(@"C:\Users\Fexri\source\repos\GoCampingWebUI\GoCamping.WebAdmin\wwwroot\")),
+
+                RequestPath = "/img"
             });
         }
     }
